@@ -1,0 +1,63 @@
+[project]
+name = "kda5"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ksmile2014122-ux", email = "ksmile2014122@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=25.1.0",
+    "bs4>=0.0.2",
+    "chromadb>=1.5.9",
+    "ddgs>=9.16.0",
+    "faiss-cpu>=1.15.1",
+    "fastapi[standard]>=0.143.1",
+    "feedparser>=6.0.14",
+    "google-genai>=2.29.0",
+    "gradio>=6.30.0",
+    "jinja2>=3.1.6",
+    "langchain>=1.4.5",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.2",
+    "langchain-google-genai>=4.4.1",
+    "langchain-openai>=1.7.1",
+    "langchain-redis>=0.2.6",
+    "langchain-tavily>=0.2.18",
+    "langgraph-checkpoint-sqlite>=3.1.2",
+    "markdownify>=1.2.3",
+    "mediapipe>=1.1.1",
+    "openai>=3.26.0",
+    "pandas>=2.3.3",
+    "pydantic>=2.13.5",
+    "pydub>=0.25.1",
+    "pykrx>=1.2.9",
+    "pypdf>=6.21.1",
+    "python-docx>=1.2.0",
+    "python-dotenv>=1.2.4",
+    "python-multipart>=0.0.32",
+    "qrcode>=8.2",
+    "redis>=8.1.0",
+    "setuptools<81",
+    "tabulate>=0.10.0",
+    "tavily-python>=0.8.5",
+    "tiktoken>=0.14.0",
+    "tqdm>=4.70.1",
+    "wikipedia>=1.4.0",
+    "youtube-transcript-api>=1.2.4",
+    "yt-dlp>=2026.8.19",
+]
+
+[project.scripts]
+kda5 = "kda5:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "langgraph-cli[inmem]>=0.4.35",
+]
